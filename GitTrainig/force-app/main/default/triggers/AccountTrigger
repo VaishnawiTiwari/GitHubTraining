@@ -3,6 +3,7 @@ trigger AccountTrigger on Account (before insert){
 for(Account a : Trigger.new){
 if(a.BillingStreet!=null){
 a.ShippingStreet=a.BillingStreet;
+a.ShippingStreet=a.BillingStreet;
 }
 if(a.BillingCity!=null){
 a.ShippingCity=a.BillingCity;
